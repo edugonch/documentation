@@ -1,0 +1,62 @@
+es:
+  layouts:
+    documentation:
+      application:
+        title: Documentación
+      header:
+        title: Documentación
+        back_to_site: De vuelta al sitio
+      search:
+        query_placeholder: Buscar Documentación...
+        
+  documentation:
+    
+    helpers:
+      documentation_breadcrumb_for:
+        default_root_link: Inicio
+      documentation_search_summary:
+        text: "Se ha encontrado %{total_results} páginas que coinciden con su búsqueda. Mostrando resultados %{start_result} a %{end_result}"
+      documentation_search_results:
+        in: en
+      documentation_search_pagination:
+        next: Proxima página
+        previous: Página anterior
+        
+    pages:
+      index:
+        welcome_title: Bienvenido a la Documentación
+        welcome_text: Elija una página del menú a la izquierda de la pantalla para comenzar.
+        developer_tip:
+          Puede sobreescribir esta página agregando una nueva vista en <code>app/views/documentation/pages/index</code>.
+          Alternativamente, puedes deshabilitar este mensaje configurando <code>developer_tips</code> en falso en el
+          Configuración de la documentación.
+        create_root_page: Crear nueva página principal
+        reorder_root_pages: Reordenar las páginas principales
+      
+      show:
+        view_in_website: Ver en sitio web
+        last_updated: Última actualizacion en %{timestamp}
+      
+      admin_buttons:
+        new: Nueva página
+        edit: Editar página
+        reorder: Reordenar hijos
+        delete: Eliminar página
+      
+      form:
+        title_placeholder: Ingrese un título para esta página
+        content_placeholder: 'Use Markdown para ingresar al contenido de la página'
+        permalink_placeholder: Se genera automáticamente si se deja en blanco
+        add_screenshot: Añadir captura de pantalla
+        save: Guardar página
+      
+      positioning:
+        reorder_root_pages_title: Reordenar las páginas principales
+        back_to_page: Volver al sitio
+        back_to_homepage: Volver a la página de inicio
+        
+      search:
+        title: "Resultados de búsqueda para '%{query}'"
+        no_results: "No se encontraron páginas que coincidan '%{query}'"
+        next_page: Siguiente página
+        previous_page: Página anterior
